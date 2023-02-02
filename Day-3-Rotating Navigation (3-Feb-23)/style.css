@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    font-family: candara;
+    overflow-x: hidden;
+    margin: 0;
+    color: #222;
+    background-color: #333;
+}
+    
+.container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle{
+    background-color: #ff7979bd;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.circle button#open {
+    left: 60%;
+}
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.content h1 {
+    margin-bottom: -14px;
+}
+
+.content img {
+    margin-left: 25%;
+    margin-top: 70px;
+}
+
+.content h3 {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 44%;
+    background: #ff6f6f;
+    border: 1px solid #ff6f6f;
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 9px;
+    margin-top: 25px;
+    display: table;
+    transition: .5s;
+}
+
+.content a:hover {
+    background-color: transparent;
+    color: #ff6f6f;
+}
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+} 
+
+nav ul {
+    padding-left: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform .4s ease-in;
+}  
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);  
+}
+
+.container.show-nav .circle {
+    transform: rotate(-70deg);
+}
