@@ -5,7 +5,7 @@ const icon = document.querySelector('i')
 
 serchBtn.addEventListener('click', () => {
     search.classList.toggle('active')
-    input.focus()
+    input.focus() 
 
     // icon.classList.add('fa-times')
     // icon.classList.remove('fa-search')
