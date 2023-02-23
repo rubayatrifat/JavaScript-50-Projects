@@ -60,7 +60,7 @@ main {
 }
 
 .movie img {
-    width: 100%;
+    max-width: 89%;
 }
 
 .movie-info {
@@ -83,6 +83,8 @@ main {
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
+    position: absolute;
+    right: 53px;
 }
 
 
@@ -102,12 +104,13 @@ main {
     background-color: #fff;
     padding: 2rem;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: -9px;
+    bottom: -7px;
     right: 0;
     max-height: 100%;
     transform: translateY(101%);
     transition: transform .3s ease-in;
+    max-width: 92%;
 }
 
 .over-view p {
