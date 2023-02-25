@@ -65,3 +65,22 @@ form.addEventListener('submit', (evt) => {
         window.location.reload()
     }
 })
+
+// Search button
+
+const searchButton = document.querySelector('.search-ico')
+const searchIcon = document.querySelector('.search-ico i')
+const searchElm = document.querySelector('.search')
+
+searchButton.addEventListener('click', (evt) => {
+    evt.preventDefault()
+
+    searchElm.focus()
+
+    searchElm.classList.toggle('active')
+
+    searchButton.classList.toggle('active')
+
+    searchIcon.classList.toggle('fa-times')
+
+})
