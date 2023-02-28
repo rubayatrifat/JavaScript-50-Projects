@@ -1,0 +1,5 @@
+const hourELm = document.querySelector('.hour')
+const minuteElm = document.querySelector('.minute')
+const scoundElm = document.querySelector('.scound')
+const timeElm = document.querySelector('.time')
+const dateElm = document.querySelector('.hour')
