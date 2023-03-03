@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: tahoma;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+}
+
+canvas {
+    border: 2px solid steelblue;
+    margin-top: 30px;
+}
+
+.toll-box {
+    background-color: steelblue;
+    border: 1px solid steelblue;
+    display: flex;
+    width: 804px;
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+
+.toll-box > * {
+    background-color: #fff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    width: 50px;
+    height: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+
+.toll-box > *:last-child  {
+    margin-left: auto;
+}
