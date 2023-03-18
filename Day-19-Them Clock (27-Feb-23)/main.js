@@ -3,14 +3,14 @@ const minuteElm = document.querySelector('.minute')
 const scoundElm = document.querySelector('.scound')
 const timeElm = document.querySelector('.time')
 const dateElm = document.querySelector('.date')
-const toogle = document.querySelector('.toggle')
+const toggle = document.querySelector('.toggle')
 
 
 const days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednessday", "Thursday", "Friday"]
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec"]
 
-toogle.addEventListener('click', (e) => {
+toggle.addEventListener('click', (e) => {
     const hmtl = document.querySelector('html')
 
     if(hmtl.classList.contains('dark')) {

@@ -1,2 +1,2 @@
-const toogle = document.getElementById('toogle')
+const toggle = document.getElementById('toggle')
 document

@@ -13,14 +13,14 @@ body {
     overflow: hidden;
 }
 
-.toogle-container {
+.toggle-container {
     display: flex;
     align-items: center;
     margin: 10px 0;
     width: 200px;
 }
 
-.toogle {
+.toggle {
     visibility: hidden;
 }
 
@@ -35,7 +35,7 @@ body {
     position: relative;
 }
 
-.toogle:checked + .label {
+.toggle:checked + .label {
     background-color: #8e44ad;
 }
 
@@ -52,7 +52,7 @@ body {
     animation: slideOff 0.3s linear forwards;
 }
 
-.toogle:checked + .label .ball {
+.toggle:checked + .label .ball {
     animation: slideOn 0.3s linear forwards;
 }
 
